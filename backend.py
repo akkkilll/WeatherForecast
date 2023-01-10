@@ -4,7 +4,7 @@ API_key="141710af2113bab9f55ef73e1bcd33d5"
 
 # example: getData(New York, 4, temperature)
 def getData(place, days):
-    url = f"https://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_key}"
+    url = f"https://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_key}&units=metric"
     response = requests.get(url)
     data = response.json()
 
